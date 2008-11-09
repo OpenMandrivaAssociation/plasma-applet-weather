@@ -7,7 +7,7 @@ License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://www.kde-look.org/content/show.php/Weather+Plasmoid?content=84251
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
-BuildRequires:	kdebase4-workspace-devel >= 2:4.1.0
+BuildRequires:	plasma-devel
 
 Requires:       kdebase4-runtime
 %description 
