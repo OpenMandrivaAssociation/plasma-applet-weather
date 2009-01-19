@@ -1,7 +1,7 @@
 Summary:    Plasma applet that allow to see the weather	
 Name:		plasma-applet-weather
 Version: 	0.4
-Release: 	%mkrel 3
+Release: 	%mkrel 4
 Source0: 	http://download83.mediafire.com/zb5lb332j55g/zsj2dxxj2sl/plasma-weather-%version.tar.gz
 Patch0:     plasma-weather-0.4-fix-link.patch
 Patch1:     plasma-weather-0.4-fix-cmake.patch
@@ -10,7 +10,6 @@ Group: 		Graphical desktop/KDE
 Url: 		http://www.kde-look.org/content/show.php/Weather+Plasmoid?content=84251
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	plasma-devel
-
 Requires:       kdebase4-runtime
 %description 
 Plasma applet that allow to see the weather. 
@@ -26,10 +25,9 @@ Plasma applet that allow to see the weather.
 %prep
 %setup -q -n weather
 %patch0 -p1
-%patch1 -p1
+%patch1 -p1 -b .plasma
 
 %build
-%define _disable_ld_no_undefined 1
 %cmake_kde4
 %make
 
