@@ -3,6 +3,7 @@ Name:		plasma-applet-weather
 Version: 	1.0.0
 Release: 	%mkrel 1
 Source0: 	ftp://ftp.kde.org/pub/kde/stable/4.2.0/src/extragear/%name-%version.tar.bz2
+Patch0:     plasma-applet-weather-FixWithQt45.patch
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
@@ -23,6 +24,7 @@ Plasma applet that allow to see the weather.
 
 %prep
 %setup -q
+%patch0 -p0
 
 %build
 %cmake_kde4
