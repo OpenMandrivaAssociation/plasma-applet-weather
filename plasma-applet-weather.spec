@@ -8,6 +8,7 @@ Group: 		Graphical desktop/KDE
 Url: 		http://www.kde.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	plasma-devel
+BuildRequires:  kdebase4-workspace-devel
 Requires:       kdebase4-runtime
 %description 
 Plasma applet that allow to see the weather. 
