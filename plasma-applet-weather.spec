@@ -6,7 +6,7 @@ Source0: 	ftp://ftp.kde.org/pub/kde/stable/4.2.0/src/extragear/%name-%version.ta
 Patch0:     plasma-applet-weather-FixWithQt45.patch
 License: 	GPLv2+
 Group: 		Graphical desktop/KDE
-Url: 		http://www.kde.org
+Url: 		https://www.kde.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	plasma-devel
 BuildRequires:  kdebase4-workspace-devel
